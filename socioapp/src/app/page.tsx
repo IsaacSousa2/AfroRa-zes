@@ -1,11 +1,23 @@
-import { Header } from "@/components/Header/page"
-import { Footer } from "@/components/Footer/page"
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <div>
+
+    <div className="flex">
+
       <Header />
-      <Footer />
+
+      <div className="flex flex-col items-center overflow-y-scroll w-full h-screen">
+
+        <div className="w-[800px] max-w-full">
+          <h1 className="text-6xl font-bold">Povo Quilomba</h1>
+          <p>Um trabalho de sociologio feito pelos mitos.</p>
+        </div>
+
+      </div> {/*Conteudo principal*/}
+
     </div>
-  )
-}
+
+  );
+};

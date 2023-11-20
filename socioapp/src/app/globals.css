@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/*Largura*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+/*Fundo*/
+::-webkit-scrollbar-track {
+    background: #d4d4d4; 
+} 
+/*Onde segura*/
+::-webkit-scrollbar-thumb {
+    background: #a1a1a1; 
+}
+/* Onde segura hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7e7e7e; 
+}

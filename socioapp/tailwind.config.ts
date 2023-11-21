@@ -7,23 +7,42 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      '2xl': {'max': '1535px'},
+      // => @media (max-width: 1535px) { ... }
+
+      'xl': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'lg': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '767px'},
+      // => @media (max-width: 767px) { ... }
+
+      'sm': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
+      
+      'mm': {'max' : '350px'},
+      // => @media (max-width: 350px) { ... }
+
+    },
     extend: {
       colors: {
-
-        'white-facebook': "#F0F2F5",
-        'gray-text': '#CCCCCC',
-        'green-mark': "#93E850",
-        'black-bg': "#1F1F1F",
-        'black-text': "#777777",
-        'black-2': "#252525",
+        'cinza' : '#F0F2F5',
+        'cinzaEscuro' : '#737373',
+        'branco' : '#ffffff',
+        'preto' : '#000000',
       },
-      screens: {
-
-        '2xl': '1536px',
-        'xl': '1280px',
-        'lg': '1024px',
-        'md': '760px',
-        'sm': '600px',
+      keyframes: {
+        showSideBar:{
+          '0%': { transform: 'translateY(-400px)', opacity: '0' },
+        '100%': { transform: 'translateY(0px)', opacity: '1' },
+        },
+        removeSideBar:{
+        '100%' :{ transform: 'translateY(0px)', opacity:'1'},
+          '0%' :{ transform: 'translateY(-400)', opacity:'0'},
+        },
       },
     },
   },

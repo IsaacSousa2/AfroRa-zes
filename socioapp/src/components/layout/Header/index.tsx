@@ -2,48 +2,59 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../assets/img/AfroLogo.png";
+import menuHamburguer from "../../../assets/icons/menuHamburguer.png"
 import doubleRight from "../../../assets/icons/doubleRight.png";
 import { useState } from "react";
-import menuHamburguer from "../../../assets/icons/menuHamburguer.png"
 export default function Header() {
     const[menuAtivado, setMenuAtivado] = useState(false);/* */
     function abrirMenu() {
-        if (menuAtivado == false) {setMenuAtivado(true);}
-        else {setMenuAtivado(false);}}/*estrutura de condição para menu hamburguer*/
-    return(
-        <div>
-            <div className="bg-white-facebook w-[450px] h-screen p-5 items-center flex flex-col justify-between lg:w-[80px]">
 
-                <div className="hidden lg:flex hover:hidden p-2">
-                    <div className="">
-                        <Image src={menuHamburguer} alt="Menu Hamburguer" width={28} height={28}/>
+        if (menuAtivado == false) {setMenuAtivado(true);}
+
+        else {setMenuAtivado(false);}
+
+    }/*estrutura de condição para menu hamburguer*/
+    const[botaoAtivado, setBotaoAtivado] = useState(false);/* */
+    function virarBotao() {
+
+        if (botaoAtivado == false) {setBotaoAtivado(true);}
+
+        else {setBotaoAtivado(false);}
+
+    }/*estrutura de condição para menu hamburguer*/
+    return(
+        <div className="h-screen w-[400px] bg-white-facebook p-5 lg:w-[90px] lg:bg-white">
+            <div className="justify-between gap-5 flex flex-col items-center h-full max-h-[1500px] my-auto">
+                <div className="flex lg:hidden">
+                    <Image src={Logo} alt="Logo" className="w-[250px]" />
+                </div>
+
+                <div className="">
+                    <div className="hidden lg:flex p-2">
+                        <button className="" onClick={abrirMenu}>
+                            <Image src={menuHamburguer} alt="Menu Hamburguer" width={28} height={28} />
+                        </button>
+                    </div>
+                    
+                    <div className="flex flex-col text-2xl font-bold text-gray-text lg:hidden justify-start">
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Quem são</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Legislação</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Cultura</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Desafios</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Ações</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Educação</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Parcerias</a>
+                        <a href="#QuemSao" className="hover:text-black transition-all duration-[0.2s]">Perspectivas</a>
                     </div>
                 </div>
-
-                <div className="lg:hidden">
-                    <Image src={Logo} alt="Logo" className="w-[250px]"/>
+                <div className="flex items-center justify-center"> 
+                    <label htmlFor="">
+                        <button className={`absolute w-[40px] h-[30] bg-gray-button rounded-2xl flex items-center `} onClick={virarBotao}>
+                            <span className={`w-[16px] h-[16px] bg-white rounded-full justify-start ml-[0,8px] ${botaoAtivado? 'ml-[23px] duration-[0.8s]' : 'ml=[0,8px] duration-[0.8s]'}`}></span>
+                        </button>
+                    </label>
                 </div>
-
-                <div className="flex flex-col items-start text-2xl font-bold text-center gap-4 lg:bg-cinzaEscuro lg:w-[300px] lg:h-[300px] lg:flex lg:items-center lg:justify-center rounded-md duration-[0.7s] ">
-
-                    <a href="#quemSao" className="hover:text-gray-text transition-all duration-[0.2s]">Quem são</a>
-                    <a href="#legislacao" className="hover:text-gray-text transition-all duration-[0.2s]">Legislação</a>
-                    <a href="#diversidade" className="hover:text-gray-text transition-all duration-[0.2s]">Diversidade</a>
-                    <a href="#cultura" className="hover:text-gray-text transition-all duration-[0.2s]">Cultura</a>
-                    <a href="#desafios" className="hover:text-gray-text transition-all duration-[0.2s]">Desafios</a>
-                    <a href="#acoes" className="hover:text-gray-text transition-all duration-[0.2s]">Ações</a>
-                    <a href="#educacao" className="hover:text-gray-text transition-all duration-[0.2s]">Educação</a>
-                    <a href="#parcerias" className="hover:text-gray-text transition-all duration-[0.2s]">Parcerias</a>
-                    <a href="#perspectivas" className="hover:text-gray-text transition-all duration-[0.2s]">Perspectivas</a>
-
-                </div>
-
-                <div className="lg:bottom-1">
-
-                    <button className="bg-cinzaEscuro w-[50px] h-[25px] rounded-3xl"><span className="items-start flex rounded-full bg-branco h-[21px] w-[20px] ml-[3px]"></span></button>
-
-                </div>
-
+                
             </div>
         </div>
     );

@@ -59,9 +59,9 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-center mr-[40px] mb-3 lg:mr-[-5px] lg:hidden"> 
+                <div className="flex items-center justify-center mr-[40px] mb-6 lg:mr-[-5px] lg:hidden"> 
                     <label htmlFor="">
-                        <button className={`absolute w-[40px] h-[30] bg-gray-button rounded-2xl flex items-center `} onClick={virarBotao}>
+                        <button className={`absolute w-[40px] h-[30] bg-gray-button rounded-2xl flex items-center`} onClick={virarBotao}>
                             <span className={`w-[16px] h-[16px] bg-white rounded-full justify-start ml-[0,8px] ${botaoAtivado? 'ml-[23px] duration-[0.8s]' : 'ml=[0,8px] duration-[0.8s]'}`}></span>
                         </button>
                     </label>

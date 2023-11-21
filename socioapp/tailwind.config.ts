@@ -19,11 +19,11 @@ const config: Config = {
       },
       screens: {
 
-        '2xl': '1536px',
-        'xl': '1280px',
-        'lg': '1024px',
-        'md': '760px',
-        'sm': '600px',
+        "2xl": { "max" : "1536px" },
+        "xl": { "max" : "1290px" },
+        "md": { "max" : "1100px" },
+        "lg": { "max" : "1024px" },
+        "sm": { "max" : "670px"},
       },
     },
   },

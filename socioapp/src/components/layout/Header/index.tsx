@@ -24,7 +24,7 @@ export default function Header() {
                     <Image src={Logo} alt="Logo" className="w-[250px]"/>
                 </div>
 
-                <div className="flex flex-col text-2xl font-bold text-center gap-4 lg:bg-cinzaEscuro lg:w-[300px] lg:h-[300px] lg:flex lg:items-center lg:justify-center rounded-md duration-[0.7s] ">
+                <div className="flex flex-col items-start text-2xl font-bold text-center gap-4 lg:bg-cinzaEscuro lg:w-[300px] lg:h-[300px] lg:flex lg:items-center lg:justify-center rounded-md duration-[0.7s] ">
 
                     <a href="#quemSao" className="hover:text-gray-text transition-all duration-[0.2s]">Quem são</a>
                     <a href="#legislacao" className="hover:text-gray-text transition-all duration-[0.2s]">Legislação</a>

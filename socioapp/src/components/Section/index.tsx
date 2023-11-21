@@ -4,7 +4,7 @@ import Imagem from "../Imagem";
 type SectionProps = {
 
     title: string,
-    text: string,
+    text: any,
     image: boolean,
     src?: any,
     alt?: string,

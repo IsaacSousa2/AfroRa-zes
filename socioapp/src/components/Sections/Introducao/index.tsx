@@ -27,7 +27,7 @@ export default function Introducao() {
 
             </div> {/*Header*/}
 
-            <Section title="Quem são?" text="Os quilombos representam comunidades historicamente formadas por pessoas afrodescendentes que fugiram da escravidão no período colonial brasileiro. Esses refúgios autossustentáveis foram cruciais para a preservação da cultura e da liberdade, tornando-se símbolos de resistência e perseverança." image={true} src={PovoQuilomba} desc="Povo Quilomba" alt="Foto do povo quilomba"/>
+            <Section title="Quem são?" text="Os quilombos representam comunidades historicamente formadas por pessoas afrodescendentes que fugiram da escravidão no período colonial brasileiro. Esses refúgios autossustentáveis foram cruciais para a preservação da cultura e da liberdade, tornando-se símbolos de resistência e perseverança." image={true} src={PovoQuilomba} desc="Grupo de mulheres colhendo plantação" alt="Foto de mulheres colhendo"/>
 
         </div>
     );

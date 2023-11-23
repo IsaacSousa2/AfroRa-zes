@@ -10,6 +10,7 @@ import Acoes from "@/components/Sections/Acoes";
 import Educacao from "@/components/Sections/Educacao";
 import Parcerias from "@/components/Sections/Parcerias";
 import Perspectivas from "@/components/Sections/Perspectivas";
+import { AppThemeProvider } from "@/contexts/ThemeContext";
 
 export default function Home() {
 
@@ -17,29 +18,31 @@ export default function Home() {
 
   return (
 
-    <div className={`flex duration-[0.2s] ${dark ? "bg-black-bg" : "bg-white"}`}>
+    <AppThemeProvider>
+      <div className={`flex duration-[0.2s] ${dark ? "bg-black-bg" : "bg-white"}`}>
 
-      <Header />
+        <Header />
 
-      <div className="flex flex-col items-center overflow-y-scroll overflow-x-hidden w-full h-screen">
+        <div className="flex flex-col items-center overflow-y-scroll overflow-x-hidden w-full h-screen">
 
-        <div className="w-[800px] px-5 max-w-full">
+          <div className="w-[800px] px-5 max-w-full">
 
-          <Introducao/>
-          <Legislacao/>
-          <Diversidade/>
-          <Cultura/>
-          <Desafios/>
-          <Acoes/>
-          <Educacao/>
-          <Parcerias/>
-          <Perspectivas/>
+            <Introducao/>
+            <Legislacao/>
+            <Diversidade/>
+            <Cultura/>
+            <Desafios/>
+            <Acoes/>
+            <Educacao/>
+            <Parcerias/>
+            <Perspectivas/>
 
-        </div> {/*Secoes*/}
+          </div> {/*Secoes*/}
 
-      </div> {/*Conteudo principal*/}
+        </div> {/*Conteudo principal*/}
 
-    </div>
+      </div>
+    </AppThemeProvider>
 
   );
 };

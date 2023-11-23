@@ -11,6 +11,7 @@ import { BsMegaphone } from "react-icons/bs";
 import { MdOutlineCastForEducation } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
 import { FaHeadSideVirus } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { useState } from "react";
 export default function Header() {
@@ -52,7 +53,7 @@ export default function Header() {
             setDark(false);
         }
 
-    }{/*estrutura de condição para menu hamburguer*/}
+    }{/*estrutura de condição para Troca de tema*/}
 
     return(
 
@@ -126,15 +127,15 @@ export default function Header() {
 
                         <a href="#perspectivas" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
-                            <FaHeadSideVirus className="text-2xl" />
+                            <FaRegEye className="text-2xl" />
                             <p className="text-2xl font-bold">Perspectivas</p>
 
                         </a> 
 
                     </div> {/*Btns para navegação*/}
 
-                    <div onClick={ trocarTema } className={`w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-gray-text' : 'bg-black-2'}`}>
-                        <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-black" : "bg-white"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}></div>
+                    <div onClick={ trocarTema } className={`w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-black-2' : 'bg-white'}`}>
+                        <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-white" : "bg-black"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}></div>
                     </div> {/*Btn para trocar tema*/}
                     
                 </div>
@@ -209,15 +210,15 @@ export default function Header() {
 
                         <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
-                            <FaHeadSideVirus className="text-2xl" />
+                            <FaRegEye className="text-2xl" />
                             <a href="#perspectivas" className="text-2xl font-bold">Perspectivas</a>
 
                         </div>
 
                     </div> {/*Btns de paginação*/}
 
-                    <div onClick={ trocarTema } className={` w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-gray-text' : 'bg-black-2'}`}>
-                        <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-black" : "bg-white"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}></div>
+                    <div onClick={ trocarTema } className={` w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-black-bg' : 'bg-white'}`}>
+                        <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-white" : "bg-black"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}></div>
                     </div> {/*Btn para trocar tema*/}
 
                 </div> 

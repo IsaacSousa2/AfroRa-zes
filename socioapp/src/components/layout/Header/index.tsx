@@ -38,7 +38,7 @@ export default function Header() {
             setMenuAtivado(false);
         }
 
-    }/estrutura de condição para menu hamburguer/
+    }{/*estrutura de condição para menu hamburguer*/}
 
     function trocarTema() {
 
@@ -52,177 +52,178 @@ export default function Header() {
             setDark(false);
         }
 
-    }/estrutura de condição para menu hamburguer/
+    }{/*estrutura de condição para menu hamburguer*/}
 
     return(
 
         <>
 
-            <RxHamburgerMenu onClick={abrirMenu}  className={`absolute z-10 hidden text-2xl text-black-bg mt-2 ml-2 cursor-pointer lg:flex ${menuAtivado? 'lg:hidden' : 'flex'}`}/>
+            <RxHamburgerMenu onClick={abrirMenu}  className={`absolute z-10 hidden text-2xl text-black-bg mt-2 ml-2 cursor-pointer lg:flex ${menuAtivado? 'lg:hidden' : 'flex'}`}/> {/*Btn para abrir menu*/}
             
             <div className={`h-screen w-[500px] bg-white-facebook pt-2 duration-[0.2s] lg:ml-[-500px]`}>
 
                 <div className="flex flex-col items-center justify-between gap-5 p-5 h-full ">
 
-                    <Image src={Logo} className="max-w-full" draggable="false" loading="eager" alt="Logo do projeto"/> 
+                    <Image src={Logo} className="w-[250px] max-w-full" draggable="false" loading="eager" alt="Logo do projeto"/> 
 
                     <div className="flex flex-col items-start">
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <BsPeople className="text-2xl"/> 
-                            <a href="#quemSao" className="text-3xl font-bold">Quem são</a>
+                            <p className="text-2xl font-bold">Quem são</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#legislacao" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <BsBook className="text-2xl" /> 
-                            <a href="#legislacao" className="text-3xl font-bold">Legislação</a>
+                            <p className="text-2xl font-bold">Legislação</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#diversidade" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <MdDiversity1 className="text-2xl" />
-                            <a href="#diversidade" className="text-3xl font-bold">Diversidade</a>
+                            <p className="text-2xl font-bold">Diversidade</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#cultura" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <TbWorldPlus className="text-2xl" />
-                            <a href="#cultura" className="text-3xl font-bold">Cultura</a>
+                            <p className="text-2xl font-bold">Cultura</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#desafios" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <MdLightbulbOutline className="text-2xl" />
-                            <a href="#desafios" className="text-3xl font-bold">Desafios</a>
+                            <p className="text-2xl font-bold">Desafios</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#acoes" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <BsMegaphone className="text-2xl" />
-                            <a href="#acoes" className="text-3xl font-bold">Ações</a>
+                            <p className="text-2xl font-bold">Ações</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#educacao"className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <MdOutlineCastForEducation className="text-2xl" />
-                            <a href="#educacao" className="text-3xl font-bold">Educação</a>
+                            <p className="text-2xl font-bold">Educação</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#parcerias" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <RiContactsLine className="text-2xl" />
-                            <a href="#parcerias" className="text-3xl font-bold">Parcerias</a>
+                            <p className="text-2xl font-bold">Parcerias</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#perspectivas" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <FaHeadSideVirus className="text-2xl" />
-                            <a href="#perspectivas" className="text-3xl font-bold">Perspectivas</a>
+                            <p className="text-2xl font-bold">Perspectivas</p>
 
-                        </div> 
+                        </a> 
 
-                    </div> 
+                    </div> {/*Btns para navegação*/}
 
-                    <div onClick={ trocarTema } className={` w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-gray-text' : 'bg-black-2'}`}>
+                    <div onClick={ trocarTema } className={`w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-gray-text' : 'bg-black-2'}`}>
                         <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-black" : "bg-white"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}></div>
-                    </div>
+                    </div> {/*Btn para trocar tema*/}
                     
                 </div>
 
-            </div>
+            </div> {/*Header*/}
 
-            <div onClick={fecharMenu} className={`hidden lg:block duration-[0.2s] ${menuAtivado ? "bg-white-facebook/60 backdrop-blur-sm" : "bg-white-facebook/0 backdrop-blur-0"} fixed w-screen h-screen`}></div>
+            <div onClick={fecharMenu} className={`absolute duration-[0.2s] ${menuAtivado ? "bg-white-facebook/60 backdrop-blur-sm w-screen h-screen" : "bg-white-facebook/0 backdrop-blur-0"}`}></div> {/*Fundo do header para telas menores*/}
 
             <div className={`hidden lg:flex fixed h-screen w-[250px] max-w-full bg-white-facebook duration-[0.2s] ${menuAtivado ? "ml-0" : "ml-[-400px]"}`}>
 
                 <div className="flex flex-col items-center justify-between gap-5 p-5 h-full">
 
-                    <Image src={Logo} className="max-w-full" draggable="false" loading="eager" alt="Logo do projeto"/>
+                    <Image src={Logo} className="max-w-full" draggable="false" loading="eager" alt="Logo do projeto"/> {/*Logo*/}
 
                     <div className="flex flex-col items-start">
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#quemSao" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsPeople className="text-2xl"/>
-                            <a href="#quemSao" className="text-2xl font-bold">Quem são</a>
+                            <p className="text-2xl font-bold">Quem são</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#legislacao" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsBook className="text-2xl" />  
-                            <a href="#legislacao" className="text-2xl font-bold">Legislação</a>
+                            <p className="text-2xl font-bold">Legislação</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#diversidade" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <MdDiversity1 className="text-2xl" />
-                            <a href="#diversidade" className="text-2xl font-bold">Diversidade</a>
+                            <p className="text-2xl font-bold">Diversidade</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#cultura" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <TbWorldPlus className="text-2xl" />
-                            <a href="#cultura" className="text-2xl font-bold">Cultura</a>
+                            <p className="text-2xl font-bold">Cultura</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#desafios" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <MdLightbulbOutline className="text-2xl" />
-                            <a href="#desafios" className="text-2xl font-bold">Desafios</a>
+                            <p className="text-2xl font-bold">Desafios</p>
 
-                        </div>
+                        </a>
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#acoes" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsMegaphone className="text-2xl" />
-                            <a href="#acoes" className="text-2xl font-bold">Ações</a>
+                            <p className="text-2xl font-bold">Ações</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#educacao" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <MdOutlineCastForEducation className="text-2xl" /> 
-                            <a href="#educacao" className="text-2xl font-bold">Educação</a>
+                            <p className="text-2xl font-bold">Educação</p>
 
-                        </div> 
+                        </a> 
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <a href="#parcerias" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <RiContactsLine className="text-2xl" />
-                            <a href="#parcerias" className="text-2xl font-bold">Parcerias</a>
+                            <p className="text-2xl font-bold">Parcerias</p>
 
-                        </div>
+                        </a>
 
-                        <div className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <FaHeadSideVirus className="text-2xl" />
                             <a href="#perspectivas" className="text-2xl font-bold">Perspectivas</a>
 
                         </div>
 
-                    </div> 
+                    </div> {/*Btns de paginação*/}
 
                     <div onClick={ trocarTema } className={` w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-gray-text' : 'bg-black-2'}`}>
                         <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-black" : "bg-white"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}></div>
-                    </div>
+                    </div> {/*Btn para trocar tema*/}
 
                 </div> 
-            </div> 
+                
+            </div> {/*Header para telas menores*/}
 
-        </>
-    );
+        </>
+    );
 };

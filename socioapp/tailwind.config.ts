@@ -23,6 +23,7 @@ const config: Config = {
         "xl": { "max" : "1290px" },
         "md": { "max" : "1100px" },
         "lg": { "max" : "1024px" },
+        "lgMin": { "min": "1024px" },
         "sm": { "max" : "670px"},
       },
     },

@@ -5,13 +5,15 @@ import Introducao from "@/components/Sections/Introducao";
 import Legislacao from "@/components/Sections/Legislacao";
 import Diversidade from "@/components/Sections/Diversidade";
 import Cultura from "@/components/Sections/Cultura";
+import Zumbi from "@/components/Sections/zumbi";
+import QuilombolasNoCeara from "@/components/Sections/quilombolasCeara";
 import Desafios from "@/components/Sections/Desafios";
 import Acoes from "@/components/Sections/Acoes";
 import Educacao from "@/components/Sections/Educacao";
 import Parcerias from "@/components/Sections/Parcerias";
 import Perspectivas from "@/components/Sections/Perspectivas";
-import { AppThemeProvider } from "../contexts";
 import Recomendacoes from "@/components/Sections/Recomendacoes";
+import { AppThemeProvider } from "../contexts";
 
 export default function Home() {
 
@@ -33,6 +35,8 @@ export default function Home() {
               <Legislacao/>
               <Diversidade/>
               <Cultura/>
+              <Zumbi/>
+              <QuilombolasNoCeara/>
               <Desafios/>
               <Acoes/>
               <Educacao/>

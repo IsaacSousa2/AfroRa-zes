@@ -16,7 +16,7 @@ export default function Introducao() {
             <div className="flex flex-col gap-2">
 
                 <h1 className={`text-7xl font-bold duration-[0.2s] sm:text-4xl ${dark ? "text-white" : ""}`}>Povo Quilombola</h1> {/*Titulo*/}
-                <p className={`duration-[0.2s] ${dark ? "text-black-text" : "text-gray-text"}`}>Resistência e Herança Cultural nas Comunidades Quilombolas do Brasil</p> {/*Subtitulo*/}
+                <p className={`duration-[0.2s] ${dark ? "text-black-text" : "text-gray-text"}`}>Resistência e herança cultural nas comunidades quilombolas do Brasil</p> {/*Subtitulo*/}
 
                 <div className="flex items-center gap-3">
 

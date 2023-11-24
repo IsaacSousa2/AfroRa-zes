@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Introducao from "@/components/Sections/Introducao";
@@ -10,39 +10,41 @@ import Acoes from "@/components/Sections/Acoes";
 import Educacao from "@/components/Sections/Educacao";
 import Parcerias from "@/components/Sections/Parcerias";
 import Perspectivas from "@/components/Sections/Perspectivas";
-import { AppThemeProvider } from "@/contexts/ThemeContext";
+import { AppThemeProvider } from "../contexts";
 
 export default function Home() {
 
-  const[dark, setDark] = useState(false);
+  const[dark, setDark] = useState(false)
 
   return (
 
-    <AppThemeProvider>
-      <div className={`flex duration-[0.2s] ${dark ? "bg-black-bg" : "bg-white"}`}>
+    <div>
+      <AppThemeProvider>
+        <div className={`flex duration-[0.2s] ${dark ? "bg-black-bg" : "bg-white"}`}>
 
-        <Header />
+          <Header />
 
-        <div className="flex flex-col items-center overflow-y-scroll overflow-x-hidden w-full h-screen">
+          <div className="flex flex-col items-center overflow-y-scroll overflow-x-hidden w-full h-screen">
 
-          <div className="w-[800px] px-5 max-w-full">
+            <div className="w-[800px] px-5 max-w-full">
 
-            <Introducao/>
-            <Legislacao/>
-            <Diversidade/>
-            <Cultura/>
-            <Desafios/>
-            <Acoes/>
-            <Educacao/>
-            <Parcerias/>
-            <Perspectivas/>
+              <Introducao/>
+              <Legislacao/>
+              <Diversidade/>
+              <Cultura/>
+              <Desafios/>
+              <Acoes/>
+              <Educacao/>
+              <Parcerias/>
+              <Perspectivas/>
 
-          </div> {/*Secoes*/}
+            </div> {/*Secoes*/}
 
-        </div> {/*Conteudo principal*/}
+          </div> {/*Conteudo principal*/}
 
-      </div>
-    </AppThemeProvider>
+        </div>
+      </AppThemeProvider>
+  </div>
 
   );
 };

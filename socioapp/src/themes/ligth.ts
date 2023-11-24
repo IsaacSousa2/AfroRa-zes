@@ -1,19 +1,14 @@
 import { createTheme } from "@mui/material";
+import { light } from "@mui/material/styles/createPalette";
 
 export const LigthTheme = createTheme({
     palette: {
+        mode:'light',
         primary: {
             main: '#F0F2F5',
-            dark: '#000000',
+            dark: '#ffffff',
             light: '#0f172a',
             contrastText: '#CCCCCC',
-        },
-
-        secondary: {
-            main: '#1F1F1F',
-            dark: '#252525',
-            light: '#777777',
-            contrastText: '#ffffff',
         },
 
         background: {

@@ -1,4 +1,5 @@
 'use client'
+import { useState, useEffect } from "react";
 import { DarkTheme } from "../../../themes/dark";
 import { LigthTheme } from "@/themes";
 import Image from "next/image";
@@ -12,10 +13,8 @@ import { MdLightbulbOutline } from "react-icons/md";
 import { BsMegaphone } from "react-icons/bs";
 import { MdOutlineCastForEducation } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
-import { FaHeadSideVirus } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { useState } from "react";
+import { MdSlowMotionVideo } from "react-icons/md";
 import { useAppThemeContext } from "@/contexts";
 export default function Header() {
 
@@ -33,18 +32,17 @@ export default function Header() {
         }
 
     }
-
     function fecharMenu(){
 
-        if (menuAtivado == false) {
+        if (menuAtivado == true) {
+
             setMenuAtivado(false);
         }
         else {
-            setMenuAtivado(false);
+            setMenuAtivado(true);
         }
 
     }{/*estrutura de condição para menu hamburguer*/}
-
     function trocarTema() {
 
         if (dark == false) {
@@ -73,7 +71,7 @@ export default function Header() {
 
                     <div className="flex flex-col items-start">
 
-                        <a className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
+                        <a href="#quemSao" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
 
                             <BsPeople className="text-2xl"/> 
                             <p className="text-2xl font-bold">Quem são</p>
@@ -134,23 +132,32 @@ export default function Header() {
                             <FaRegEye className="text-2xl" />
                             <p className="text-2xl font-bold">Perspectivas</p>
 
-                        </a> 
+                        </a>
 
+                        <a href="#recomendacoes" className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text active:brightness-90">
+
+                            <MdSlowMotionVideo className="text-2xl" />
+                            <p className="text-2xl font-bold">Recomendações</p>
+
+                        </a>
+                    
                     </div> {/*Btns para navegação*/}
 
                     <div onClick={ trocarTema } className={`w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-black-2' : 'bg-white'}`}>
+
                         <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-white" : "bg-black"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}>
                             <button onClick={ toggleTheme }></button>
                         </div>
+
                     </div> {/*Btn para trocar tema*/}
                     
                 </div>
 
             </div> {/*Header*/}
 
-            <div onClick={fecharMenu} className={`absolute duration-[0.2s] ${menuAtivado ? "bg-white-facebook/60 backdrop-blur-sm w-screen h-screen" : "bg-white-facebook/0 backdrop-blur-0"}`}></div> {/*Fundo do header para telas menores*/}
+            <div onClick={fecharMenu} className={`absolute z-10 duration-[0.2s] lgMin:hidden ${menuAtivado ? "bg-white-facebook/60 backdrop-blur-sm w-screen h-screen" : "bg-white-facebook/0 backdrop-blur-0"}`}></div> {/*Fundo do header para telas menores*/}
 
-            <div className={`hidden lg:flex fixed h-screen w-[250px] max-w-full bg-white-facebook duration-[0.2s] ${menuAtivado ? "ml-0" : "ml-[-400px]"}`}>
+            <div className={`hidden z-10 lg:flex fixed h-screen w-[250px] max-w-full bg-white-facebook duration-[0.2s] ${menuAtivado ? "ml-0" : "ml-[-400px]"}`}>
 
                 <div className="flex flex-col items-center justify-between gap-5 p-5 h-full">
 
@@ -218,6 +225,13 @@ export default function Header() {
 
                             <FaRegEye className="text-2xl" />
                             <a href="#perspectivas" className="text-2xl font-bold">Perspectivas</a>
+
+                        </div>
+
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+
+                            <MdSlowMotionVideo className="text-2xl" />
+                            <a href="#recomendacoes" className="text-2xl font-bold">Recomendações</a>
 
                         </div>
 

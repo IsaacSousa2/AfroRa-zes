@@ -25,6 +25,7 @@ const config: Config = {
         "lg": { "max" : "1024px" },
         "lgMin": { "min": "1024px" },
         "sm": { "max" : "670px"},
+        "sc450" : { "max" : "450px" },
       },
     },
   },

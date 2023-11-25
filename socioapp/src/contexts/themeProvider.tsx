@@ -1,4 +1,4 @@
-export default function AppThemeProvider () {
+export const AppThemeProvider = () => {
 
     return(
         <div>${""}</div>

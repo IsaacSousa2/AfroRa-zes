@@ -13,7 +13,7 @@ import Educacao from "@/components/Sections/Educacao";
 import Parcerias from "@/components/Sections/Parcerias";
 import Perspectivas from "@/components/Sections/Perspectivas";
 import Recomendacoes from "@/components/Sections/Recomendacoes";
-import { AppThemeProvider } from "../contexts";
+import { AppThemeProvider } from "../contexts/themeProvider";
 
 export default function Home() {
 

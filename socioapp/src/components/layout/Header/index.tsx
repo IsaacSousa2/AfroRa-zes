@@ -177,7 +177,7 @@ export default function Header() {
                         <a href="#cultura" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <TbWorldPlus className="text-2xl" />
-                            <p className="text-2xl font-bold">Cultura</p>
+                            <a href="#cultura" className="text-2xl font-bold">Cultura</a>
 
                         </a> 
 
@@ -191,7 +191,7 @@ export default function Header() {
                         <a href="#acoes" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsMegaphone className="text-2xl" />
-                            <p className="text-2xl font-bold">Ações</p>
+                            <a href="#acoes" className="text-2xl font-bold">Ações</a>
 
                         </a> 
 

@@ -149,7 +149,7 @@ export default function Header() {
 
                 <div className="flex flex-col items-center justify-center gap-5 p-5 h-full">
 
-                    <Image src={Logo} className="max-w-full absolute top-4" draggable="false" loading="eager" alt="Logo do projeto"/> {/*Logo*/}
+                    <Image src={Logo} className="max-w-full absolute top-4 w-[200px] left-[23px]" draggable="false" loading="eager" alt="Logo do projeto"/> {/*Logo*/}
 
                     <div className="flex flex-col items-start">
 

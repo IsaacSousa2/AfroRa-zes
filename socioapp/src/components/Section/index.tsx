@@ -9,8 +9,8 @@ type SectionProps = {
     text3?: any,
     image?: boolean,
     src?: any,
-    alt?: string,
-    desc?: string,
+    alt?: any,
+    desc?: any,
 };
 
 export default function Section( { title, text, text2, text3, image, src, alt, desc}: SectionProps ) {
@@ -35,5 +35,5 @@ export default function Section( { title, text, text2, text3, image, src, alt, d
             </div>
         
         </>
-    );
+    )
 };

@@ -1,7 +1,5 @@
 'use client'
-import { useState, useEffect } from "react";
-import { DarkTheme } from "../../../themes/dark";
-import { LigthTheme } from "@/themes";
+import { useState } from "react";
 import Image from "next/image";
 import Logo from "../../../assets/img/AfroLogo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -15,12 +13,10 @@ import { MdOutlineCastForEducation } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
 import { FaRegEye } from "react-icons/fa";
 import { MdSlowMotionVideo } from "react-icons/md";
-import { useAppThemeContext } from "@/contexts";
 export default function Header() {
 
     const[menuAtivado, setMenuAtivado] = useState(false);
     const[dark, setDark] = useState(false);
-    const { toggleTheme } = useAppThemeContext()
 
     function abrirMenu() {
 

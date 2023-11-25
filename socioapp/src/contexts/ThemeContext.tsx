@@ -4,6 +4,10 @@ import {Box} from '@mui/material'
 import { LigthTheme } from "../themes/ligth";/*Import light theme */
 import { DarkTheme } from "../themes/dark";/*Import dark theme */
 
+type ThemeProps = {
+    children: React.ReactNode;
+}
+
 
 interface IThemeContextData {
     themeName: 'light' | 'dark';/*Temas */

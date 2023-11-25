@@ -65,9 +65,9 @@ export default function Header() {
             
             <div className={`h-screen w-[500px] bg-white-facebook pt-2 duration-[0.2s] lg:ml-[-500px]`}>
 
-                <div className="flex flex-col items-center justify-between gap-5 p-5 h-full ">
+                <div className="flex flex-col items-center justify-center gap-5 p-5 h-full ">
 
-                    <Image src={Logo} className="w-[250px] max-w-full" draggable="false" loading="eager" alt="Logo do projeto"/> 
+                    <Image src={Logo} className="w-[250px] max-w-full absolute top-5" draggable="false" loading="eager" alt="Logo do projeto"/> 
 
                     <div className="flex flex-col items-start">
 
@@ -142,14 +142,6 @@ export default function Header() {
                         </a>
                     
                     </div> {/*Btns para navegação*/}
-
-                    <div onClick={ trocarTema } className={`w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-black-2' : 'bg-white'}`}>
-
-                        <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-white" : "bg-black"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}>
-                            <button onClick={ toggleTheme }></button>
-                        </div>
-
-                    </div> {/*Btn para trocar tema*/}
                     
                 </div>
 
@@ -159,9 +151,9 @@ export default function Header() {
 
             <div className={`hidden z-10 lg:flex fixed h-screen w-[250px] max-w-full bg-white-facebook duration-[0.2s] ${menuAtivado ? "ml-0" : "ml-[-400px]"}`}>
 
-                <div className="flex flex-col items-center justify-between gap-5 p-5 h-full">
+                <div className="flex flex-col items-center justify-center gap-5 p-5 h-full">
 
-                    <Image src={Logo} className="max-w-full" draggable="false" loading="eager" alt="Logo do projeto"/> {/*Logo*/}
+                    <Image src={Logo} className="max-w-full absolute top-4" draggable="false" loading="eager" alt="Logo do projeto"/> {/*Logo*/}
 
                     <div className="flex flex-col items-start">
 
@@ -236,12 +228,6 @@ export default function Header() {
                         </div>
 
                     </div> {/*Btns de paginação*/}
-
-                    <div onClick={ trocarTema } className={` w-16 p-1 rounded-full cursor-pointer ${dark? 'bg-black-bg' : 'bg-white'}`}>
-                        <div onClick={trocarTema} className={`${dark ? "ml-[64%] bg-white" : "bg-black"} w-5 h-5 rounded-full duration-[0.2s] cursor-pointer`}>
-                            <button onClick={toggleTheme}></button>
-                        </div>
-                    </div> {/*Btn para trocar tema*/}
 
                 </div> 
                 

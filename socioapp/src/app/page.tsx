@@ -22,7 +22,7 @@ export default function Home() {
   return (
 
     <div>
-      <AppThemeProvider>
+      
         <div className={`flex duration-[0.2s] ${dark ? "bg-black-bg" : "bg-white"}`}>
 
           <Header />
@@ -49,7 +49,6 @@ export default function Home() {
           </div> {/*Conteudo principal*/}
 
         </div>
-      </AppThemeProvider>
   </div>
 
   );

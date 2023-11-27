@@ -153,61 +153,61 @@ export default function Header() {
 
                     <div className="flex flex-col items-start">
 
-                        <a href="#quemSao" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsPeople className="text-2xl"/>
-                            <p className="text-2xl font-bold">Quem são</p>
+                            <a href="#quemSao" className="text-2xl font-bold">Quem são</a>
 
-                        </a> 
+                        </div> 
 
-                        <a href="#legislacao" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsBook className="text-2xl" />  
-                            <p className="text-2xl font-bold">Legislação</p>
+                            <a href="#legislacao" className="text-2xl font-bold">Legislação</a>
 
-                        </a> 
+                        </div> 
 
-                        <a href="#diversidade" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <MdDiversity1 className="text-2xl" />
-                            <p className="text-2xl font-bold">Diversidade</p>
+                            <a href="#diversidade" className="text-2xl font-bold">Diversidade</a>
 
-                        </a> 
+                        </div> 
 
-                        <a href="#cultura" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <TbWorldPlus className="text-2xl" />
                             <a href="#cultura" className="text-2xl font-bold">Cultura</a>
 
-                        </a> 
+                        </div> 
 
-                        <a href="#desafios" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <MdLightbulbOutline className="text-2xl" />
-                            <p className="text-2xl font-bold">Desafios</p>
+                            <a href="#desafios" className="text-2xl font-bold">Desafios</a>
 
-                        </a>
+                        </div>
 
-                        <a href="#acoes" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <BsMegaphone className="text-2xl" />
                             <a href="#acoes" className="text-2xl font-bold">Ações</a>
 
-                        </a> 
+                        </div> 
 
-                        <a href="#educacao" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <MdOutlineCastForEducation className="text-2xl" /> 
-                            <p className="text-2xl font-bold">Educação</p>
+                            <a href="#educacao" className="text-2xl font-bold">Educação</a>
 
-                        </a> 
+                        </div> 
 
-                        <a href="#parcerias" onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
+                        <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
                             <RiContactsLine className="text-2xl" />
-                            <p className="text-2xl font-bold">Parcerias</p>
+                            <a href="#parcerias" className="text-2xl font-bold">Parcerias</a>
 
-                        </a>
+                        </div>
 
                         <div onClick={ trocarTema } className="flex items-center gap-3 rounded-lg cursor-pointer py-3 px-3 duration-[0.2s] hover:bg-gray-text">
 
